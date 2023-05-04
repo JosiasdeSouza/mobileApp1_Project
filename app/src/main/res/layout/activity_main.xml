@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        tools:context="com.example.onlineshopapp.MainActivity">
+
+        <View
+            android:id="@+id/topContainer"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="parent "
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="260dp"
+            android:layout_height="220dp"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/todo_i"
+            android:src="@drawable/dorsetmaxxlogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/topContainer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:boxStrokeColor="@color/black"
+            app:hintAnimationEnabled="true"
+            app:hintTextColor="@color/black"
+            app:errorTextColor="@color/red"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            />
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/usernameInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/hint_username"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:padding="15dp"
+            android:textColorHint="@color/black"
+            android:textSize="18sp"
+            tools:ignore="VisualLintTextFieldSize"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutPassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="20dp"
+            app:boxStrokeColor="@color/light_yellow"
+            app:errorTextColor="@color/red"
+            app:hintAnimationEnabled="true"
+            app:hintTextColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/emailInputLayout"
+            app:passwordToggleEnabled="true">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:padding="15dp"
+                android:textSize="18sp"
+                tools:ignore="VisualLintTextFieldSize" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/pink"
+            android:text="@string/text_button_sign_in"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inputLayoutPassword" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonCreate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="104dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/white"
+            android:text="@string/create_an_account"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonSignIn" />
+
+        <TextView
+            android:id="@+id/twxtRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:text="@string/text_register"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.444"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonSignIn" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/twxtRegister"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/bg_bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/progressBar"
+            app:layout_constraintVertical_bias="0.323" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

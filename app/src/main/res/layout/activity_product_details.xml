@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ProductDetailsActivity">
+
+    <!-- Product image -->
+
+    <ImageView
+        android:id="@+id/product_image"
+        android:layout_width="320dp"
+        android:layout_height="167dp"
+        android:layout_marginTop="35dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Product title -->
+
+    <TextView
+        android:id="@+id/product_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/product_title"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/product_image" />
+
+    <!-- Product description -->
+    <TextView
+        android:id="@+id/product_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="@id/product_title"
+        app:layout_constraintStart_toStartOf="@id/product_title"
+        app:layout_constraintTop_toBottomOf="@id/product_title" />
+
+    <!-- Product price -->
+
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@id/product_description"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/product_description">
+
+
+        <TextView
+            android:id="@+id/product_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/product_id"
+            android:textAlignment="center"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@id/product_price" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/decrease_quantity_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/minus_bt"
+            android:textSize="25sp"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/pink"/>
+
+        <TextView
+            android:id="@+id/count_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="22dp"
+            android:text="@string/qtv"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/increase_quantity_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/plus_bt"
+            android:textSize="25sp"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/pink"/>
+
+        <Button
+            android:id="@+id/buy_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/buy_bt"
+            android:textSize="25sp"
+            android:backgroundTint="@color/pink"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/shopping_cart"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="215dp"
+        android:src="@drawable/shopping_cart"
+        tools:ignore="MissingConstraints"
+         />
+
+    <TextView
+        android:id="@+id/product_price"
+        android:layout_width="150dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/product_price_pd"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/pink"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/product_image"
+        app:layout_constraintEnd_toEndOf="@id/product_image"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="45dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+                <TextView
+                    android:id="@+id/id_prod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_1"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/person_name"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:padding="10dp"
+                    android:src="@mipmap/ic_launcher"
+                    tools:ignore="ContentDescription,ImageContrastCheck" />
+
+
+                <TextView
+                    android:id="@+id/category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/cat"
+                    android:textColor="@color/black"
+                    android:textAlignment="textEnd"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="20dp" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/price"
+                    android:textColor="@color/black"
+                    android:textAlignment="textEnd"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="20dp" />
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/descriprion"
+                    android:textSize="18sp" />
+
+
+                <TextView
+                    android:id="@+id/rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_3_9"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_120"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

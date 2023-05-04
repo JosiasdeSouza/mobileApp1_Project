@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="prod_id">id</string>
+    <string name="price">price</string>
+    <string name="category">category</string>
+    <string name="description">description</string>
+    <string name="rate">rate</string>
+    <string name="count">count</string>
+</resources>
+
+
+
+

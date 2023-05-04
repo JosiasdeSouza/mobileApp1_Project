@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">OnlineShopApp</string>
+    <string name="hint_password">Password</string>
+    <string name="text_button_sign_in">Sign in</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="text_register">If you do not have an ID, register for an account</string>
+    <string name="todo_i">TODO</string>
+    <string name="hint_username">Username</string>
+    <string name="categories">Categories</string>
+    <string name="electronics">Electronics</string>
+    <string name="mobiles">Mobiles</string>
+    <string name="product_title">Samsung Galaxy S10</string>
+    <string name="product_price">€204.99</string>
+    <string name="product_description">128 GB</string>
+    <string name="product_id1">1</string>
+    <string name="product_category">Mobiles</string>
+    <string name="product_rating">4.5</string>
+    <string name="product_rate">3.5</string>
+    <string name="product_count">1</string>
+    <string name="todo">TODO</string>
+    <string name="register">Register</string>
+    <string name="hint_repeat_password">Repeat Password</string>
+    <string name="tod">TODO</string>
+    <string name="electronics1">Electeste</string>
+    <string name="person_name">Person Name</string>
+    <string name="price1">€379.00</string>
+    <string name="_1">1</string>
+    <string name="category1">men\'s clothing</string>
+    <string name="descriprion" translatable="false">Welcome to Modcom. Here We are dedicated to serve and offer you he best</string>
+    <string name="_3_9">3.9</string>
+    <string name="_120" translatable="false">120</string>
+    <string name="cat" translatable="false">men\'s clothing</string>
+    <string name="womens_clothing">Womens Clothing</string>
+    <string name="product_id">1</string>
+    <string name="product_quantity">22.55</string>
+    <string name="product_title_pd">Product title</string>
+    <string name="product_description_pd">Welcome to Modcom. Here We are dedicated to serve and offer you he best</string>
+    <string name="product_price_pd">€379.00</string>
+    <string name="minus_bt">-</string>
+    <string name="qtv">0</string>
+    <string name="plus_bt">+</string>
+    <string name="buy_bt">Buy</string>
+    <string name="product_details">1</string>
+</resources>
