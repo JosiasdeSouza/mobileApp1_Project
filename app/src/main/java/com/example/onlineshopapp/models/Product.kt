@@ -13,6 +13,11 @@ class Product(
     val rating: Rating
 ) : Serializable  {
 
+
+    val quantity: Any
+        get() = 1
+    val productPrice: Any
+        get() = price
     val image_url: String
         get() = "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
 

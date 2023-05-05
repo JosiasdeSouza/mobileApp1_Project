@@ -8,22 +8,14 @@ interface CartService {
     @POST("carts")
     suspend fun createCart(): Cart
 
-    @POST("carts/{cart_id}/items")
-    suspend fun addItemToCart(
-        @Path("cart_id") cartId: Long,
-        @Body item: CartItem
-    ): Cart
+    @PUT("carts/{id}")
+    suspend fun updateCart(@Path("id") id: Int, @Body cart: Cart): Cart
 
-    @GET("carts/{cart_id}")
-    suspend fun getCart(
-        @Path("cart_id") cartId: Long
-    ): Cart
-
-    @DELETE("carts/{cart_id}")
-    suspend fun clearCart(
-        @Path("cart_id") cartId: Long
-    ): Cart
-
-    abstract fun getUser(i: Int): User
+    @DELETE("carts/{id}")
+    suspend fun deleteCart(@Path("id") id: Int)
+    @POST("carts")
+    fun addToCart(@Query("productId") productId: Int): Call<CartItem>
+    abstract fun onSuccess(cartItems: List<CartItem>)
 }
+
 

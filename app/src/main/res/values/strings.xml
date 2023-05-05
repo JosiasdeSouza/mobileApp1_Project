@@ -41,4 +41,15 @@
     <string name="plus_bt">+</string>
     <string name="buy_bt">Buy</string>
     <string name="product_details">1</string>
+    <string name="your_cart">cart_title</string>
+    <string name="total_amn">Total: €0.00</string>
+    <string name="checkout">Checkout</string>
+    <string name="cart_id">1</string>
+    <string name="your_id">1</string>
+    <string name="cart_user_id">1</string>
+    <string name="cart_date">2020-03-02T00:00:00.000Z</string>
+    <string name="products_id">2</string>
+    <string name="cart_quantity">4</string>
+    <string name="loading">Loading Spinner</string>
+    <string name="about_this_app">About this app</string>
 </resources>

@@ -6,7 +6,9 @@ import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.onlineshopapp.databinding.ActivityMainBinding
 import com.example.onlineshopapp.models.Auth
@@ -51,7 +53,19 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+        val aboutButton = findViewById<Button>(R.id.about_button)
+        aboutButton.setOnClickListener {
+            showAboutDialog()
+        }
     }
+
+    private fun showAboutDialog() {
+        val aboutText = "Online Shop App\n\nCopyright (c) Josias de Souza"
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("About this app")
+        builder.setMessage(aboutText)
+        builder.setPositiveButton("OK", null)
+        builder.create().show()}
 
     @SuppressLint("CommitPrefEdits")
     private fun signIn(username: String, password: String) {

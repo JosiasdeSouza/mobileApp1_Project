@@ -11,7 +11,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/white"
+        android:background="@color/light_pink"
     tools:context="com.example.onlineshopapp.CreateAnAccount">
 
         <TextView
@@ -151,7 +151,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="20dp"
-            android:background="@color/white"
+            android:background="@color/light_pink"
             android:text="@string/create_an_account"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"

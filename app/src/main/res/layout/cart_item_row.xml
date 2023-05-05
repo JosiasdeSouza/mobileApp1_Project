@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/cart_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/your_id"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/cart_user_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cart_user_id"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:padding="16dp"/>
+    <TextView
+        android:id="@+id/cart_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cart_date"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:padding="16dp"/>
+    <TextView
+        android:id="@+id/cart_products_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/products_id"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:padding="16dp"/>
+    <TextView
+        android:id="@+id/cart_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cart_quantity"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:padding="16dp"/>
+
+
+</LinearLayout>
