@@ -4,7 +4,8 @@
     Student ID: 24615
     Course: Computer Science (Year 2)
 
-Link App working video: https://youtu.be/FgeOVMrEGFE
+Link App working video: 
+https://youtu.be/FgeOVMrEGFE
 
 Requirements:
 	Authentication
