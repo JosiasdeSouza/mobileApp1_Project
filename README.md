@@ -1,6 +1,11 @@
 # Project_CA3
 
-24615 - Josias Rodrigues de Souza
+    Student Name: Josias Rodrigues de Souza 
+    Student ID: 24615
+    Course: Computer Science (Year 2)
+
+Link App working video
+ https://youtu.be/FgeOVMrEGFE
 
 Requirements:
 	Authentication
@@ -30,4 +35,5 @@ Requirements:
 7. Bonus
 7.1. ViewPager2 with bottom TabLayout for: Shop, Cart, Orders, Profile icons
 7.2. Show a map fragment based on the GPS co-ordinates in the user profile
+ 
  
